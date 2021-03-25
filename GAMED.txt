@@ -1,0 +1,35 @@
+     A*%%TS  SD  20201026  173606  PITC109     REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R REC001
+     A*%%TS  SD  20201026  173606  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'Exit')
+     A                                  2 30'Welcome to Number Game'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            NUM002         2Y 0O  5 36EDTCDE(Z)
+     A            NUM001         2Y 0O  5 27EDTCDE(Z)
+     A            NUM003         2Y 0O  5 45EDTCDE(Z)
+     A            NUM004         2Y 0O  5 53EDTCDE(Z)
+     A            NUM005         2Y 0O  7 27EDTCDE(Z)
+     A            NUM009         2Y 0O  9 27EDTCDE(Z)
+     A            NUM013         2Y 0O 11 27EDTCDE(Z)
+     A            NUM006         2Y 0O  7 36EDTCDE(Z)
+     A            NUM010         2Y 0O  9 36EDTCDE(Z)
+     A            NUM014         2Y 0O 11 36EDTCDE(Z)
+     A            NUM007         2Y 0O  7 45EDTCDE(Z)
+     A            NUM011         2Y 0O  9 45EDTCDE(Z)
+     A            NUM015         2Y 0O 11 45EDTCDE(Z)
+     A            NUM008         2Y 0O  7 53EDTCDE(Z)
+     A            NUM012         2Y 0O  9 53EDTCDE(Z)
+     A            NUM016         2Y 0O 11 53EDTCDE(Z)
+     A                                 16 11'Enter the number to move:'
+     A            INPNUM         2S 0I 16 38
+     A                                 16 50'Moves used:'
+     A            MUSED          2S 0O 16 63
+     A                                  2  6DATE
+     A                                      EDTCDE(Y)
+     A                                  2 67TIME
+     A            MSG           70A  O 19 10DSPATR(BL)
+     A                                      COLOR(RED)
+     A                                 21 11'F3 = Exit'
